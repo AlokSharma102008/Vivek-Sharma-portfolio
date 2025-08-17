@@ -193,6 +193,80 @@
         footer p a:visited:hover {
             color: #fff;
         }
+        .parallax {
+            background-image: url('assets/images/parallax-bg.jpg'); /* Use your image path */
+            min-height: 350px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 40px;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff9800;
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            background-image: url('Prince sharma1.jpg'); /* Replace with your image */
+            position: relative;
+            min-height: 40vh;
+            margin-left: 33.3%;
+            margin-right: 33.3%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .parallax::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 100%;
+            z-index: -1;
+        }
+        @media (max-width: 600px) {
+            .parallax {
+                min-height: 200px;
+                font-size: 1.5rem;
+            }
+            .branding h1 {
+                font-size: 2rem;
+            }
+            .branding p {
+                font-size: 1rem;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            nav a {
+                padding: 6px 12px;
+            }
+            .project-card {
+                padding: 12px;
+            }
+            .project-card h3 {
+                font-size: 1.2rem;
+            }
+            .project-card p {
+                font-size: 0.9rem;
+            }
+            .project-card a {
+                font-size: 0.9rem;
+            }
+}
     </style>
 </head>
 <body>
@@ -209,7 +283,7 @@
             </ul>
         </nav>
     </header>
-
+    <div class="parallax"></div>
     <main>
         <section id="about">
             <h2>About Me</h2>
